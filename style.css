@@ -1,0 +1,22 @@
+input{
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   background-color:lightcyan
+}
+
+button{
+   border-radius: 10px;
+   margin-top: 20px;
+   padding: 5px;
+   background-color: lightcoral;
+
+}
+
+#form-container{
+    background-color: aquamarine;
+    padding: 10px;
+    width:50%;
+}
+

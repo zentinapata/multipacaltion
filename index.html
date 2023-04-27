@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reizināšanas tabula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Reizināšanas tabula </h2>
+     
+<div id="form-container">
+    <input type="text" id="number_m"><br>
+    <input type="text" id="number_n"><br></div>
+    <button onclick="CalculateTable()">Aprēķināt</button><br>
+</div>
+      
+ <div id="container"></div>
+
+    <script type="text/javascript">
+        function CalculateTable(){
+          let container = document.getElementById("container");  
+            let max_n = Number(document.getElementById("number_n").value);
+            let max_m = Number(document.getElementById("number_m").value);
+
+          container.innerHTML='Izmantojot For ciklu<br>';
+            
+            for(let m = 1; m <= max_m; m++){
+                container.innerHTML +=`<p>Rezinām ar ${m}</p>`;
+                for(let n = 1; n <= max_n; n++){
+                    container.innerHTML += `${m} x ${n} = ${m*n}<br>`;
+                }
+            }  
+        }
+        
+      
+    </script>
+</body>
+</html>
